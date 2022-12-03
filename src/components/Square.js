@@ -4,6 +4,8 @@ function Square() {
 
     const [number, setNumber] = useState(0)
   return (
+    <>
+    <p>Current Number {number}</p>
     <div className='square'>
         <p onClick={() => setNumber(0)}>0</p>
         <p onClick={() => setNumber(1)}>1</p>
@@ -16,6 +18,7 @@ function Square() {
         <p onClick={() => setNumber(8)}>8</p>
         <p onClick={() => setNumber(9)}>9</p>
     </div>
+    </>
   )
 }
 
