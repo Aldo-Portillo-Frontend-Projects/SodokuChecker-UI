@@ -1,11 +1,11 @@
 import React from "react";
-import Section from "./components/Section";
+import Board from "./components/Board";
 
 function App() {
   return (
     <div className="App">
       <h1>Sodoku Checker</h1>
-      <Section />
+      <Board />
     </div>
   );
 }
