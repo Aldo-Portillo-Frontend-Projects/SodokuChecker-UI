@@ -1,9 +1,9 @@
 import React from 'react'
 import Square from './Square'
 
-export default function Section() {
+export default function Section({backgroundColor}) {
   return (
-    <div className='section'>
+    <div className={`section ${backgroundColor}`}>
         <Square />
         <Square />
         <Square />
