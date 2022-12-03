@@ -41,6 +41,10 @@
   display: grid;
   place-items: center;
 }
+
+.number > h2 {
+  font-size: 3.5rem;
+}
 .square > .numbers{
   
   display: grid;
