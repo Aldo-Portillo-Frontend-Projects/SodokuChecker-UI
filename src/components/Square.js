@@ -4,8 +4,6 @@ function Square() {
 
     const [number, setNumber] = useState()
   return (
-    <>
-    <p>Current Number {number}</p>
     <div className='square'>
         {number ? 
         <div className='number'>
@@ -23,7 +21,6 @@ function Square() {
             <p onClick={() => setNumber(9)}>9</p>
         </div>}
     </div>
-    </>
   )
 }
 
