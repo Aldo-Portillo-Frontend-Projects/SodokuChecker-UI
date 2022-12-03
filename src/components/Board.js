@@ -13,7 +13,6 @@ export default function Board() {
         <Section backgroundColor="blue"/>
         <Section backgroundColor="white"/>
         <Section backgroundColor="blue"/>
-        <Section backgroundColor="white"/>
     </div>
   )
 }
