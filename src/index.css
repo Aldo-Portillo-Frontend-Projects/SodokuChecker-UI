@@ -1,11 +1,27 @@
+/* Styling Section */
 
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px) ;
+  grid-gap: 0px;
+
+}
 
 /* Styling Square */
 
 .square {
   border: 1px solid black;
-  height: auto;
+  height: 150px;
   width: 150px;
+  gap: 0;
+  padding: none;
+  margin: none;
+}
+
+.square > .number {
+  display: grid;
+  place-items: center;
 }
 .square > .numbers{
   
