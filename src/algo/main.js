@@ -78,7 +78,7 @@ let sectionValid = (puzzle) => {
 }
 
 //Final function to check if puzzle is true
-export function sudokuIsValid(puzzle) {
+function sudokuIsValid(puzzle) {
   // This function is to determine whether or not our sudoku puzzle has the values of 1-9 through each row and within each sub-grid with no repeats. The function will accept a sudoku puzzle and should return a boolean.
 
     if (rowsAndColsValid(puzzle) === true && sectionValid(puzzle) === true){
@@ -87,4 +87,8 @@ export function sudokuIsValid(puzzle) {
         return false;
     }
 
+}
+
+module.exports = {
+    sudokuIsValid,
 }
