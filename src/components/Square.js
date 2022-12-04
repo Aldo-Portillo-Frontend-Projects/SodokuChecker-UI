@@ -5,11 +5,26 @@ function Square({x, y,sudoku, setSudoku}) {
     const [number, setNumber] = useState(0)
 
     const changeNumber = (num) => {
-        setNumber(num)
-        sudoku[x][y] = num
+        //setNumber(num)
+        console.log('Coordinates: ' + x + ',' + y)
+        const updatedArr = sudoku.map((arr, index) => {
+            if (index !== x) {
+                return arr
+            } else {
+                return arr.map((val, index) => {
+                    if (index !== y) {
+                        return val
+                    } else {
+                        setNumber(num)
+                        return num
+                    }
+                })
+            }
+        })
+        setSudoku(updatedArr)
         console.log(sudoku)
     }
-    
+
   return (
     <div className='square'>
         {number ? 
