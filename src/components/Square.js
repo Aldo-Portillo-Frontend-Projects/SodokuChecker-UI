@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-function Square({x, y,sodoku}) {
+function Square({x, y,sudoku, setSudoku}) {
 
     const [number, setNumber] = useState(0)
 
     const changeNumber = (num) => {
         setNumber(num)
-        sodoku[x][y] = num
-        console.log(sodoku)
+        sudoku[x][y] = num
+        console.log(sudoku)
     }
     
   return (
