@@ -14,7 +14,7 @@ function Square({x, y,sodoku}) {
     <div className='square'>
         {number ? 
         <div className='number'>
-            <h2 onClick={() => setNumber()}>{number}</h2>
+            <h2 onClick={() => changeNumber(0)}>{number}</h2>
         </div> :
         <div className='numbers'>
             <p onClick={() => changeNumber(1)} >1</p>
