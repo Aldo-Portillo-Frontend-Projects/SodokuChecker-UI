@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <h1>Sudoku Checker</h1>
-      <Board sudoku={sudoku}/>
+      <Board sudoku={sudoku} setSudoku={setSudoku}/>
       <h2>The Game is {sudokuIsValid(sudoku) ? "Complete" : "Incomplete"}</h2>
     </div>
   );
